@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllInOneCli", "AllInOneCli\AllInOneCli.csproj", "{D09A2096-EE4E-4E2E-83BD-709852B2E52E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationalRefactorOriginal", "RelationalRefactorOriginal\RelationalRefactorOriginal.csproj", "{A3FF92E1-B7E5-47D9-B135-5528CF113CE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationalRefactorEventStore", "RelationalRefactorEventStore\RelationalRefactorEventStore.csproj", "{478A99A4-C48F-469F-BB8C-21C8B4FD8AFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D09A2096-EE4E-4E2E-83BD-709852B2E52E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D09A2096-EE4E-4E2E-83BD-709852B2E52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D09A2096-EE4E-4E2E-83BD-709852B2E52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D09A2096-EE4E-4E2E-83BD-709852B2E52E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FF92E1-B7E5-47D9-B135-5528CF113CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FF92E1-B7E5-47D9-B135-5528CF113CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FF92E1-B7E5-47D9-B135-5528CF113CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FF92E1-B7E5-47D9-B135-5528CF113CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{478A99A4-C48F-469F-BB8C-21C8B4FD8AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478A99A4-C48F-469F-BB8C-21C8B4FD8AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478A99A4-C48F-469F-BB8C-21C8B4FD8AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478A99A4-C48F-469F-BB8C-21C8B4FD8AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
