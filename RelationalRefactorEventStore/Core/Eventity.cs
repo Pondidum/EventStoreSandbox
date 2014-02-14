@@ -35,6 +35,11 @@ namespace RelationalRefactorEventStore.Core
 			return _appliedEvents;
 		}
 
+		void IEventSource.ClearChanges()
+		{
+			_appliedEvents.Clear();
+		}
+
 		protected void RegisterEvent<T>(Action<T> handler) where T : Event
 		{
 			_registeredEvents[typeof(T)] = e => handler((T) e);

@@ -6,5 +6,6 @@ namespace RelationalRefactorEventStore.Core
 	{
 		void Load(IEnumerable<Event> events);
 		IEnumerable<Event> GetChanges();
+		void ClearChanges();
 	}
 }
