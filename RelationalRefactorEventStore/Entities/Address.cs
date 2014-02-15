@@ -17,7 +17,8 @@ namespace RelationalRefactorEventStore.Entities
 
 		public Address()
 		{
-			RegisterEvent<AddressEvent>(OnAddressCreated);
+			RegisterEvent<CandidateAddressAddedEvent>(OnAddressGeneric);
+			RegisterEvent<CandidateAddressCorrectedEvent>(OnAddressGeneric);
 		}
 
 		public Address(String line1, String line2, String line3, String town, String county, String postCode, String country, AddressTypes type) : this()
@@ -38,7 +39,7 @@ namespace RelationalRefactorEventStore.Entities
 
 
 
-		private void OnAddressCreated(AddressEvent e)
+		private void OnAddressGeneric(AddressEvent e)
 		{
 			ID = e.AddressID;
 			Line1 = e.Line1;
