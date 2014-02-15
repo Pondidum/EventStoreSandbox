@@ -47,12 +47,11 @@ namespace RelationalRefactorEventStore.Core
 
 		protected void Apply<T>(T @event) where T : Event
 		{
+			Apply(@event.GetType(), @event);
+			_appliedEvents.Add(@event);
+
 			@event.EntityID = ID;
 			@event.Version = GetNextVersion();
-
-			Apply(@event.GetType(), @event);
-
-			_appliedEvents.Add(@event);
 		}
 
 		private void Apply(Type eventType, Event @event)
