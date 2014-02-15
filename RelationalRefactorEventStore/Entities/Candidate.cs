@@ -41,7 +41,7 @@ namespace RelationalRefactorEventStore.Entities
 
 		public void AddNewAddress(String line1, String line2, String line3, String town, String county, String postCode, String country, AddressTypes type)
 		{
-			Apply(new AddressEvent(Guid.NewGuid(), line1, line2, line3, town, county, postCode, country, type));
+			Apply(new CandidateAddressAddedEvent(Guid.NewGuid(), line1, line2, line3, town, county, postCode, country, type));
 		}
 
 		public void CorrectAddress(Guid addressID, String line1, String line2, String line3, String town, String county, String postCode, String country, AddressTypes type)
